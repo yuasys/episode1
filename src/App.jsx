@@ -1,23 +1,23 @@
 import './App.css';
 
 function App() {
-  const name = <h2>Nob</h2>;
-  const age = <h3>72</h3>;
-  const email = <h3>nob@nob.om</h3>;
-  const user = (
-    <>
-      {name}
-      {age}
-      {email}
-    </>
-  )
   return (
     <div className="App">
-      {user}
-      {user}
-      {user}
+      <User name="nob" age={72} email="nob@nob.com" />
+      <User name="maria" age={55} email="maria@maria.com" />
+      <User name="tiger" age={5} email="tiger@tiger.com" />
     </div>
-  )
+  );
+}
+
+const User = (props) => {
+  return (
+    <div>
+      <h1>{props.name}</h1>
+      <h1>{props.age}</h1>
+      <h1>{props.email}</h1>
+    </div>
+  );
 }
 
 export default App;
