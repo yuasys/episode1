@@ -2,13 +2,24 @@ import './App.css';
 import { useState } from "react";
 
 function App() {
-  const [textColor, setTextColor] = useState("black");
+  const [count, setCount] = useState(0);
 
+  const increase = () => {
+    setCount(count+1);
+  };
+  const decrease = () => {
+    setCount(count - 1);
+  };
+  const setzero = () => {
+    setCount(0);
+  };
 
   return (
   <div className="App">
-    <button onClick={() => {setTextColor(textColor === "black" ? "red": "black")}}>表示する／隠す</button>
-    <h1 style={{color: textColor}}>やあ、私の名前は信彦です。</h1>
+      <button onClick={increase}>Increase</button>
+      <button onClick={decrease}>Decrease</button>
+      <button onClick={setzero}>Setzoro</button><br/>
+      {count}
   </div>
   );
 }
