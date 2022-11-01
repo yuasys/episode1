@@ -7,3 +7,4 @@
 |module02|[00:18:14](https://www.youtube.com/watch?v=f55qeKGgB_M&list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR&index=19&t=1094s) |SX, Components, Props | 
 |module03|[00:38:02](https://www.youtube.com/watch?v=f55qeKGgB_M&list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR&index=19&t=2282) |Ternary Operators, Lists and CSS |
 |module04|[001:04:33](https://www.youtube.com/watch?v=f55qeKGgB_M&list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR&index=19&t=3873s)|States in React, useState Hook |
+|module05|[01:30:39](https://www.youtube.com/watch?v=f55qeKGgB_M&list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR&index=19&t=5439s)|CRUD in React, ToDo List|
