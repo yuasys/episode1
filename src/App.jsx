@@ -1,11 +1,26 @@
 import './App.css';
+import { useState } from "react";
 
 function App() {
-  const age = 17;
+  const [count, setCount] = useState(0);
+
+  const increase = () => {
+    setCount(count+1);
+  };
+  const decrease = () => {
+    setCount(count - 1);
+  };
+  const setzero = () => {
+    setCount(0);
+  };
+
   return (
-    <div className="App">
-      {age >= 18 ? <h1>OVER AGE</h1> : <h1>UNDER AGE</h1>}
-    </div>
+  <div className="App">
+      <button onClick={increase}>Increase</button>
+      <button onClick={decrease}>Decrease</button>
+      <button onClick={setzero}>Setzoro</button><br/>
+      {count}
+  </div>
   );
 }
 
