@@ -9,3 +9,4 @@
 |module04|[001:04:33](https://www.youtube.com/watch?v=f55qeKGgB_M&list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR&index=19&t=3873s)|States in React, useState Hook |
 |module05|[01:30:39](https://www.youtube.com/watch?v=f55qeKGgB_M&list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR&index=19&t=5439s)|CRUD in React, ToDo List|
 |module06|[02:10:08](https://www.youtube.com/watch?v=f55qeKGgB_M&list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR&index=19&t=7808s)|Component Lifecycle, useEffect Hook|
+|module07|[02:28:16](https://www.youtube.com/watch?v=f55qeKGgB_M&list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR&index=19&t=8896s)|Fetching Data from API's|
