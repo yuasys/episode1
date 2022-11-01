@@ -1,12 +1,16 @@
 import './App.css';
+import { useState } from "react";
 
 function App() {
-  const age = 17;
-  return (
-    <div className="App">
-      {age >= 18 ? <h1>OVER AGE</h1> : <h1>UNDER AGE</h1>}
-    </div>
-  );
+  const [age, setAge] = useState(0);
+
+  const increaseAge = () => {
+    setAge(age + 1);
+   };
+  return<div className="App">
+    {age}
+    <button onClick={increaseAge}>Increase Age</button>
+  </div>;
 }
 
 export default App;
