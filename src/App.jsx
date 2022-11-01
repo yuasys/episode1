@@ -2,16 +2,13 @@ import './App.css';
 import { useState } from "react";
 
 function App() {
-  const [inputValue, setInputValue] = useState("");
+  const [textColor, setTextColor] = useState("black");
 
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value);
-  };
 
   return (
   <div className="App">
-    <input type="text" onChange={handleInputChange}/>
-    {inputValue}
+    <button onClick={() => {setTextColor(textColor === "black" ? "red": "black")}}>表示する／隠す</button>
+    <h1 style={{color: textColor}}>やあ、私の名前は信彦です。</h1>
   </div>
   );
 }
