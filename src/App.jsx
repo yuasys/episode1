@@ -3,32 +3,22 @@ import Axios from "axios";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [name, setName] = useState("");
-  const [predictedAge, setPredicteAge] = useState(null);
-  const fetchData = () => {
-    Axios.get(`https://api.agify.io/?name=${name}`).then((res) => {
-      setPredicteAge(res.data);
+  const [generatedExcuse, setGneratedExcuse] = useState("");
+  
+  const fetchExcuse = (excuse) => {
+    Axios.get(`https://excuser.herokuapp.com/v1/excuse/${excuse}/`).then((res) => {
+      setGneratedExcuse(res.data[0].excuse);
     })
   };
 
-  useEffect(() => {
-    fetchData();
-  }, [])
-
-
   return (
     <div className="App">
-      <input
-        placeholder="例. Pedro"
-        onChange={(event) => {
-          setName(event.target.value);
-        }}
-        />
-      <button onClick={fetchData}>Predict Age</button>
-      <h1>名前:{predictedAge?.name}</h1>
-      <h1>占い年齢:{predictedAge?.age}</h1>
-      <h1>カウント:{predictedAge?.count}</h1>
-      
+      <h1>言い訳の作成</h1>
+      <button onClick={() => fetchExcuse("party")}> パーディ欠席</button>
+      <button onClick={() => fetchExcuse("family")}> 家族に言い訳</button>
+      <button onClick={() => fetchExcuse("office")}> 勤務をサボる</button>
+
+      <p> {generatedExcuse} </p>
     </div>
   );
 }
