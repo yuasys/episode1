@@ -4,6 +4,7 @@ import {Home} from './pages/Home';
 import {Menu} from './pages/Menu';
 import {Contact} from './pages/Contact';
 import {Navbar} from './pages/Navbar';
+import {Profile} from './pages/Profile';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/menu" element={<Menu/>} />
+        <Route path="/profile" element={<Profile/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="*" element={<h1>PAGE NOT FOUND</h1>} />
       </Routes>
