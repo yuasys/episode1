@@ -6,7 +6,6 @@ import {Navbar} from './pages/Navbar';
 import {Profile} from './pages/Profile';
 import { useState, useContext } from 'react';
 import { createContext } from "react";
-
 export const AppContext = createContext();
 
 function App() {
