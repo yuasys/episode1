@@ -16,6 +16,10 @@ button {
   margin-top: 10px;
 }
 
+h1 {
+  text-align: center;
+}
+
 .addTask {
   height: 30vh;
   background-color: dodgerblue;
