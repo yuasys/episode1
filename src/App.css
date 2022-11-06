@@ -35,6 +35,6 @@ form {
   flex-direction: column;
 }
 
-p {
-  color: red;
+.catfact {
+  color: #444;
 }
