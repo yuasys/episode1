@@ -1,13 +1,25 @@
 import "./App.css";
-import { useToggle } from "./useToggle";
+import Axios from "axios";
+import { useEffect, useState } from "react";
 
 function App() {
-  const {state: isVisible, toggle} = useToggle();
+  const [catFact, setCatFact] = useState("");
+
+  const fetchCatFact = () => {
+    Axios.get("https://catfact.ninja/fact").then((res) => {
+      setCatFact(res.data.fact);
+    });
+  }
+
+  useEffect(() => {
+    fetchCatFact();
+    }, []);
+  
 
   return (
     <div className="App">
-      <button onClick={toggle}>{isVisible ? "Hide" : "Show"}</button>
-      {isVisible && <h1>Hidden text</h1>}
+      <button onClick={fetchCatFact}>Generate Cat Fact</button>
+      <p className="catfact"> {catFact} </p>
     </div>
   );
 }
